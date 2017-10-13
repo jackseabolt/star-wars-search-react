@@ -2,7 +2,7 @@ import {
     SEARCH_CHARACTERS_REQUEST, 
     SEARCH_CHARACTERS_SUCCESS, 
     SEARCH_CHARACTERS_ERROR
-} from './actions'; 
+} from '../actions/index'; 
 
 const initialState = {
     characters: [], 

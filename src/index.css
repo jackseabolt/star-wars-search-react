@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 80px;
   font-family: sans-serif;
-  background: url(background.jpg) no-repeat center fixed; 
+  background: url(images/background.jpg) no-repeat center fixed; 
   -webkit-background-size: cover; 
   -o-background-size: cover; 
   -moz-background-size: cover; 

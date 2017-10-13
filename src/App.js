@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux'; 
 import Spinner from 'react-spinkit'
-import {searchCharacters} from './actions'; 
+import {searchCharacters} from './actions/index'; 
 import './index.css'; 
 
 
@@ -41,7 +41,7 @@ export class App extends React.Component {
     return (
       <div> 
         <div className="container">
-          <img src={require('./logo.png')} alt="Star Wars Logo" className="logo" />
+          <img src={require('./images/logo.png')} alt="Star Wars Logo" className="logo" />
           <form className="form" onSubmit={e => this.onSubmit(e)}>
             <input type="search" placeholder="Search" ref={input => this.input = input} />
             <button className="form-button" type="submit">Search</button>
