@@ -22,7 +22,7 @@ export class App extends React.Component {
     const characters = this.props.characters.map((character, idx) => 
       <li className="results" key={idx}>{character}</li>
     );
-    
+  
     return (
       <ul>
         {characters}
@@ -39,7 +39,7 @@ export class App extends React.Component {
   render() {
     return (
       <div> 
-        <div class="container">
+        <div className="container">
           <form className="form" onSubmit={e => this.onSubmit(e)}>
             <input type="search" placeholder="Search" ref={input => this.input = input} />
             <button className="form-button" type="submit">Search</button>

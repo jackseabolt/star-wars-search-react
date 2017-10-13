@@ -7,4 +7,4 @@
 
 ## Application instructions
 
-- use the search bar on the homepage to search for Star Wars information
+- Use the search bar on the homepage to search for Star Wars information
