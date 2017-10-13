@@ -21,13 +21,13 @@ export class App extends React.Component {
     }
 
     const characters = this.props.characters.map((character, idx) => 
-      <li className="results" key={idx}>{character}</li>
+      <div className="results" key={idx}><p className="name">{character}</p></div>
     );
   
     return (
-      <ul>
+      <div className="resultsContainer">
         {characters}
-      </ul>
+      </div>
     ); 
   }
   

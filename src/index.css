@@ -28,7 +28,12 @@ input {
   color: white; 
   margin-left: 5px;
   margin-right: 0px;  
-  background-color: grey;  
+  background-color: #474747; 
+  transition: 0.2s; 
+}
+
+.form-button:hover {
+  background-color: #3a3a3a; 
 }
 
 .container {
@@ -38,20 +43,30 @@ input {
 }
 
 .logo {
-  width: 400px; 
+  width: 100%; 
   display: block; 
   margin: 0px auto 50px auto; 
   margin-right: auto;
+}
+
+.name {
+  display: block; 
+  margin: 30px; 
+  font-size: 16px; 
 }
 
 .results {
   display: inline-block; 
   background-color: #dadfe8; 
   border: 1px solid #bfc4cc; 
-  width: 340px; 
+  width: 100%; 
   border-radius: 5px; 
   margin: 10px auto; 
-  padding: 30px; 
+  padding: 0px; 
+}
+
+.resultsContainer {
+  margin-top: 30px; 
 }
 
 .spinner {
@@ -61,4 +76,30 @@ input {
 
 ul {
   padding: 0px; 
+}
+
+@media screen and (max-width: 580px){
+  body {
+    padding: 50px;
+  }
+  .container {
+    width: 90%;
+    margin-left: auto; 
+    margin-right: auto;  
+  }
+  .form-button {
+    margin-left: 0px; 
+    float: right;
+    margin-bottom: 20px;  
+  }
+  .logo {
+    width: 90%; 
+    display: block; 
+    margin: 0px auto 40px auto; 
+    margin-right: auto;
+  }
+  input {
+    width: 100%;
+    margin-bottom: 5px;   
+  }
 }
