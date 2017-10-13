@@ -40,6 +40,7 @@ export class App extends React.Component {
     return (
       <div> 
         <div className="container">
+          <h1 className="title">Star Wars Search</h1>
           <form className="form" onSubmit={e => this.onSubmit(e)}>
             <input type="search" placeholder="Search" ref={input => this.input = input} />
             <button className="form-button" type="submit">Search</button>
