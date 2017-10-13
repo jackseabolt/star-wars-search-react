@@ -19,7 +19,8 @@ export const searchCharactersError = error => ({
 }); 
 
 export const searchCharacters = name => dispatch => {
+    dispatch(searchCharactersRequest()); 
     return search(name)
         .then(res => dispatch(searchCharactersSuccess(res)))
         .catch(err => dispatch(searchCharactersError(err))); 
-}
+}; 

@@ -9,7 +9,7 @@ export class App extends React.Component {
     if (this.props.loading) {
       return (
         <div>
-          <Spinner spinnerName="circle" noFadeIn />
+          <Spinner className="spinner" spinnerName="circle" noFadeIn />
           <p>Spinner</p>
         </div>
       )

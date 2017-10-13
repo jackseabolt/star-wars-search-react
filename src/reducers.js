@@ -12,6 +12,7 @@ const initialState = {
 
 export function reducer(state=initialState, action){
     if(action.type === SEARCH_CHARACTERS_REQUEST){
+        console.log('action ran'); 
         return Object.assign({}, state, {
             loading: true, 
             error: null
