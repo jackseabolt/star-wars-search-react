@@ -2,11 +2,17 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux'; 
 import Spinner from 'react-spinkit'
 import {searchCharacters} from './actions'; 
+import './index.css'; 
 
 export class App extends React.Component {
   renderResults() {
     if (this.props.loading) {
-      return <Spinner spinnerName="circle" noFadeIn />;
+      return (
+        <div>
+          <Spinner spinnerName="circle" noFadeIn />
+          <p>Spinner</p>
+        </div>
+      )
     }
 
     if (this.props.error) {
@@ -14,7 +20,7 @@ export class App extends React.Component {
     }
 
     const characters = this.props.characters.map((character, idx) => 
-      <li key={idx}>{character}</li>
+      <li className="results" key={idx}>{character}</li>
     );
     
     return (
@@ -33,13 +39,13 @@ export class App extends React.Component {
   render() {
     return (
       <div> 
-          <form onSubmit={e => this.onSubmit(e)}>
-            <input type="search" ref={input => this.input = input} />
-            <button type="submit">Search</button>
+        <div class="container">
+          <form className="form" onSubmit={e => this.onSubmit(e)}>
+            <input type="search" placeholder="Search" ref={input => this.input = input} />
+            <button className="form-button" type="submit">Search</button>
           </form>
-          <ul>
-            {this.renderResults()}
-          </ul>
+          {this.renderResults()}
+        </div>
       </div>
     );
   }
