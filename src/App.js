@@ -4,6 +4,7 @@ import Spinner from 'react-spinkit'
 import {searchCharacters} from './actions'; 
 import './index.css'; 
 
+
 export class App extends React.Component {
   renderResults() {
     if (this.props.loading) {
@@ -40,7 +41,7 @@ export class App extends React.Component {
     return (
       <div> 
         <div className="container">
-          <h1 className="title">Star Wars Search</h1>
+          <img src={require('./logo.png')} alt="Star Wars Logo" className="logo" />
           <form className="form" onSubmit={e => this.onSubmit(e)}>
             <input type="search" placeholder="Search" ref={input => this.input = input} />
             <button className="form-button" type="submit">Search</button>
