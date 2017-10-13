@@ -1,4 +1,5 @@
 import {search} from './star-wars'; 
+import think from 'redux-thunk'; 
 
 export const SEARCH_CHARACTERS_REQUEST = 'SEARCH_CHARACTERS_REQUEST'; 
 export const searchCharactersRequest = () => ({
