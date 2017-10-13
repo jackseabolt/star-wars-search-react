@@ -14,17 +14,17 @@ body {
 
 input {
   width: 325px; 
-  padding: 7px; 
+  padding: 7px 13px; 
   border: 1px solid gray; 
   border-radius: 5px; 
-  font-size: 12px; 
+  font-size: 14px; 
 }
 
 .form-button {
   padding: 8px 15px; 
   border: 0px; 
   border-radius: 5px; 
-  font-size: 12px; 
+  font-size: 14px; 
   color: white; 
   margin-left: 5px;
   margin-right: 0px;  
@@ -39,7 +39,7 @@ input {
 .container {
   width: 400px;
   margin-left: auto; 
-  margin-right: auto;  
+  margin-right: auto;
 }
 
 .logo {
@@ -88,9 +88,13 @@ ul {
     margin-right: auto;  
   }
   .form-button {
-    margin-left: 0px; 
+    margin-left: 5px; 
     float: right;
-    margin-bottom: 20px;  
+    margin: 0px; 
+    white-space: nowrap  
+  }
+  td {
+    width: 100%; 
   }
   .logo {
     width: 90%; 
@@ -100,6 +104,19 @@ ul {
   }
   input {
     width: 100%;
-    margin-bottom: 5px;   
+    margin: 0px;   
+  }
+  table {
+    display: table;  
+    width: 100%; 
+  }
+  cell {
+    display: table-cell;  
+  }
+  row {
+    display: table-row;  
+  }
+  width {
+    width: 100%;
   }
 }

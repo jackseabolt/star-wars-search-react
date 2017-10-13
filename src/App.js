@@ -43,8 +43,16 @@ export class App extends React.Component {
         <div className="container">
           <img src={require('./images/logo.png')} alt="Star Wars Logo" className="logo" />
           <form className="form" onSubmit={e => this.onSubmit(e)}>
-            <input type="search" placeholder="Search" ref={input => this.input = input} />
-            <button className="form-button" type="submit">Search</button>
+            <table>
+              <tr>
+                <td>
+                 <input type="search" placeholder="Search" ref={input => this.input = input} />
+                </td>
+                <td>
+                  <button className="form-button" type="submit">Search</button>
+                </td>
+              </tr>
+            </table>
           </form>
           {this.renderResults()}
         </div>
